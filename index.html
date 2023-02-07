@@ -1,0 +1,69 @@
+<!doctype html>
+<body>
+	<main>
+		<h1>Bookmarklets</h1>
+		<p>Oh you know, just some silly bookmarklets...</p>
+
+		<h2>Silly Flexbox Mayhem</h2>
+		<p>or: "Hexaflexagone.js" - because it makes much of the UI <em>get gone</em> (and it <em>flexes</em> in <em>unexpected</em> ways)</p>
+
+		<p>Drag this link: <a href='javascript:(function(){var applyTo=function(window){for(var __="bookmarklet-custom-css",r=window.document.querySelector("#"+__),s=r||window.document.head.appendChild(window.document.createElement("style")),_="body,body *:not(style):not(script){display:flex;flex:1;transition:flex .2s ease}body *:hover{flex:2}",i=5;i--;)_+="body"+Array(i).join(" > *")+"{flex-direction:"+(((i%2)^!!r)?"row":"column")+"}";s.textContent=_;s.id=r?"bookmarklet-custom-css-2":__;};(frames[0]?Array.from(frames):[self]).forEach(applyTo);})()'>Silly Flexbox Mayhem</a>
+		to your bookmarks bar.</p>
+		<p>
+			It toggles between two different layouts
+			(but not the original layout; for that you'll have to delete the stylesheet in the DOM)
+		</p>
+	</main>
+	<footer>
+		<a href="https://github.com/1j01/bookmarklets">Repo on GitHub</a>
+	</footer>
+
+	<style>
+
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+
+		main {
+			flex: 1 0 auto;
+			padding: 1em;
+		}
+		footer {
+			flex-shrink: 0;
+			padding-top: 1em;
+			border-top: 2px solid rgba(0, 0, 0, 0.2);
+			padding: 1em;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+
+			line-height: 1.6;
+			font-weight: 400;
+			font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: #222;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			margin-top: 0;
+			margin-bottom: 1rem;
+			font-weight: 300;
+		}
+		h1 {
+			font-size: 4.0rem;
+			line-height: 1.2;
+			letter-spacing: -.1rem;
+		}
+		h2 {
+			font-size: 2.0rem;
+			line-height: 1.25;
+		}
+
+		p {
+			margin-top: 0;
+		}
+	</style>
+</body>

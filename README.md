@@ -1,2 +1,2 @@
 # lot-of-bookmarklet
-find a shit ton of bookmarklets
+find a ton of fun bookmarklets for school

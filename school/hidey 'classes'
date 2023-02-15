@@ -1,1 +1,2 @@
 
+javascript:void function()%7Bfunction e()%7Bvar e%3Ddocument.querySelector(%22link%5Brel*%3D%27icon%27%5D%22)%7C%7Cdocument.createElement(%22link%22)%3Be.type%3D%22image/x-icon%22,e.rel%3D%22shortcut icon%22,e.href%3D%22https://ssl.gstatic.com/classroom/favicon.png%22,document.title%3D%22Classes%22,console.log(document.title),document.getElementsByTagName(%22head%22)%5B0%5D.appendChild(e)%7De(),setInterval(e,1e3)%7D()%3B
